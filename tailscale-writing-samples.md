@@ -23,17 +23,17 @@ This document explains how Distributed Cloud Firewall (DCF) enables zero trust e
 It was written to replace an outdated zero trust guide and align documentation with newer DCF-based security capabilities.
 
 ### My Role
-- Sole writer and owner of this documentation within the Security module  
-- Responsible for defining structure, flow, and section ordering from scratch  
-- Worked closely with Subject Matter Experts for technical validation and correctness  
-- Incorporated limited AI assistance for early drafting and refinement of supporting explanations  
-- Ensured final content reflected accurate system behavior and resolved internal ambiguity around Default Action Rule behavior  
+Sole owner of this documentation within the Security module, responsible for defining structure, sequencing, and explanatory flow from scratch.
+
+A key focus of my work was resolving ambiguity around Default Action Rule behavior, where internal interpretations varied. I restructured the explanation to make rule precedence and system behavior clear for customer use.
+
+I worked with Subject Matter Experts to validate technical accuracy and ensure alignment with evolving feature behavior. Limited AI assistance was used during early drafting for clarification and refinement of supporting explanations, but final content structure and technical framing were independently authored. 
 
 ### Context and Goals
 - Triggered by significant updates to Aviatrix Distributed Cloud Firewall capabilities  
 - Existing zero trust documentation was outdated and no longer reflected current architecture  
-- Goal was to provide a clear, customer-facing explanation of how zero trust is implemented using DCF  
-- Primary audience included new and existing customers implementing cloud network security policies  
+- Goal was to provide a clear, customer-facing explanation of DCF-based zero trust enforcement  
+- Primary audience included new and existing customers implementing cloud security policies  
 
 ### Technical Scope
 - Zero trust architecture principles  
@@ -42,20 +42,14 @@ It was written to replace an outdated zero trust guide and align documentation w
 - Cloud-native security controls (geolocation, threat intelligence, logging)  
 
 ### Constraints
-- Internal ambiguity around Default Action Rule behavior required SME alignment  
-- Feature behavior was still being actively interpreted internally at the time of writing  
-- No formal template existed for restructuring the legacy document  
-
-### Approach
-- Designed full document structure independently  
-- Prioritized clarity around the Default Action Rule due to known internal confusion  
-- Validated technical accuracy through SME review cycles  
-- Integrated supporting feature descriptions from multiple internal sources and SME input  
+- Internal ambiguity around Default Action Rule behavior required alignment with SMEs  
+- Feature behavior was still evolving during documentation development
+- No predefined template for document structure
 
 ### Outcome / Result
 - Published as part of updated DCF documentation set  
 - Replaced outdated zero trust guidance  
-- Served as foundational explanation of DCF-based security model for customers  
+- Served as foundational explanation of DCF security model for customers  
 
 ---
 
@@ -70,43 +64,36 @@ This document provides guidance for migrating from legacy egress FQDN-based conf
 It is intended to support customers transitioning from older Aviatrix configurations to the newer DCF-based model.
 
 ### My Role
-- Primary writer responsible for restructuring and expanding content derived from an internal VP of Product Management GitHub document  
-- Approximately 50–60% of final content derived from VP-provided material, which I refined, expanded, and rewrote for customer-facing clarity  
-- Adopted partial structural guidance (approx. 30–40%) from a VP-provided AI-generated draft used as an internal reference example  
-- Designed and built the comparison table and significantly reworked content organization for usability  
-- Worked with SMEs to validate technical accuracy due to limited direct access to legacy egress environments  
-- Incorporated limited AI assistance for drafting and structuring sections during early iteration  
+Primary writer responsible for transforming internal engineering guidance from VP of Product Management into a customer-facing migration document.
+
+I led the information architecture and design of the comparison framework, including a custom-built table mapping legacy egress concepts to DCF equivalents.
+
+The source material included a VP-provided internal document and an AI-generated structural draft used as a reference. I substantially reorganized and rewrote both to improve clarity, usability, and customer safety during migration.
+
+Because I did not have full access to legacy environments, I validated system behavior and migration assumptions with Subject Matter Experts. My role focused heavily on translating internal architecture into safe, externally consumable guidance.
 
 ### Context and Goals
 - Triggered by migration from legacy egress architecture to Distributed Cloud Firewall  
-- Goal was to help customers transition safely while avoiding misconfiguration or incomplete migration states  
-- Intended audience included existing Aviatrix customers with established legacy egress deployments  
+- Goal was to enable safe customer transition without configuration loss or partial migration states
+- Intended for existing customers with deployed legacy egress systems
 - Customers were expected to engage Aviatrix Sales or Solutions Engineers during migration  
 
 ### Technical Scope
 - Legacy egress FQDN filtering model  
 - Distributed Cloud Firewall policy model  
-- Feature mapping between legacy and DCF systems  
 - SmartGroups, WebGroups, and ExternalGroups  
-- Migration considerations and compatibility constraints  
+- Migration constraints and compatibility mapping  
 
 ### Constraints
-- No direct access to full legacy egress environments for end-to-end validation  
-- Required reliance on SME validation for system behavior and migration correctness  
-- Dependency on internal VP documentation for initial structure and conceptual framing  
-- Customer safety concerns required careful wording around migration steps  
-
-### Approach
-- Built on internal VP-provided documentation and refined into a customer-facing structure  
-- Reorganized and simplified complex migration details for clarity and safety  
-- Designed comparison table to clarify functional mapping between systems  
-- Validated technical accuracy through SME review rather than direct system testing  
-- Ensured migration guidance explicitly recommended engagement with Aviatrix support teams  
+- No direct access to full legacy egress environments
+- Required SME validation for system behavior 
+- Dependency on internal VP documentation for initial conceptual framing  
+- Migration safety requirements constrained wording and sequencing
 
 ### Outcome / Result
-- Published as part of Distributed Cloud Firewall documentation set following feature rollout  
+- Published as part of Distributed Cloud Firewall documentation set  
 - Used to support customer migration from legacy egress configurations  
-- Helped formalize migration path between legacy and DCF architectures  
+- Formalized migration path between legacy and DCF architectures  
 
 ---
 
@@ -121,36 +108,31 @@ This document describes how Distributed Cloud Firewall (DCF) is used to implemen
 It provides an operational overview of egress architecture in Aviatrix-managed networks.
 
 ### My Role
-- Sole writer responsible for end-to-end creation of documentation within the Security module  
-- Designed document structure and flow independently from scratch  
-- Wrote all content without dependency on external PM documentation or predefined templates  
-- Worked with Subject Matter Experts solely for technical validation and accuracy review  
-- Personally validated feature behavior where access to the system was available  
-- No meaningful AI usage in drafting or content generation for this document  
+Sole author of this documentation within the Security module, responsible for full end-to-end creation of structure and content.
+
+I independently defined the flow and organization of concepts, focusing on explaining system behavior clearly rather than configuration depth.
+
+Where system access was available, I validated behavior directly. Subject Matter Experts were used only for targeted technical validation.
+
+This document was primarily authored from first principles without reliance on external PM drafts or structured templates.
 
 ### Context and Goals
 - Triggered by introduction of Distributed Cloud Firewall egress functionality  
 - Goal was to explain how egress is implemented in modern Aviatrix-managed cloud networks  
-- Audience included cloud network engineers and operators implementing egress controls  
+- Audience included cloud network engineers and operators  
 - Intended as an overview rather than a step-by-step configuration guide  
 
 ### Technical Scope
 - Local egress and SNAT behavior  
-- Spoke gateway-based traffic enforcement  
+- Spoke gateway-based enforcement model 
 - Egress monitoring and policy workflows  
 - Distributed Cloud Firewall policy creation  
 - Transit gateway egress concepts (legacy reference)  
 
 ### Constraints
-- Limited depth required due to overview-level documentation intent  
-- Some feature complexity required reliance on SME validation  
-- No formal external constraints or time pressure recalled  
-
-### Approach
-- Independently defined structure and sequencing of topics  
-- Reused relevant concepts from prior documentation where applicable  
-- Ensured clarity of high-level system behavior over configuration detail  
-- Validated technical accuracy through SME review and feature testing where possible  
+- Designed as an overview-level document (not procedural guide)  
+- Some feature complexity required SME validation  
+- No significant external restraints or deadlines 
 
 ### Outcome / Result
 - Published as part of DCF egress documentation set  
