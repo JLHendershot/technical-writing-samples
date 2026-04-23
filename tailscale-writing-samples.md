@@ -6,9 +6,9 @@ This document contains three technical writing samples demonstrating experience 
 
 ## Summary of Samples
 
-- Zero trust architecture and policy enforcement in distributed cloud environments  
-- Migration strategy from legacy to modern cloud network security architecture  
-- Operational implementation of distributed egress in multi-cloud networking systems  
+- Zero trust architecture using Distributed Cloud Firewall policy enforcement (SmartGroups, Default Action Rule, and security controls)
+- Migration from legacy egress FQDN filtering to Distributed Cloud Firewall-based policy architecture
+- Operational implementation of egress traffic management in cloud networks using local egress, monitoring, and DCF policies 
 
 ---
 
@@ -66,11 +66,11 @@ It is intended to support customers transitioning from older Aviatrix configurat
 ### My Role
 Primary writer responsible for transforming internal engineering guidance from VP of Product Management into a customer-facing migration document.
 
-I led the information architecture and design of the comparison framework, including a custom-built table mapping legacy egress concepts to DCF equivalents.
+I designed the custom-built table mapping legacy egress concepts to DCF equivalents.
 
-The source material included a VP-provided internal document and an AI-generated structural draft used as a reference. I substantially reorganized and rewrote both to improve clarity, usability, and customer safety during migration.
+The source material included a VP-provided internal document and an AI-generated structural draft used as a reference. The document I created (based on this source material) was reorganized and rewritten to improve clarity, usability, and customer safety during migration.
 
-Because I did not have full access to legacy environments, I validated system behavior and migration assumptions with Subject Matter Experts. My role focused heavily on translating internal architecture into safe, externally consumable guidance.
+Because I did not have full access to a legacy environment, I validated system behavior and migration assumptions with Subject Matter Experts. My role focused heavily on translating internal architecture into safe, externally consumable guidance.
 
 ### Context and Goals
 - Triggered by migration from legacy egress architecture to Distributed Cloud Firewall  
@@ -114,8 +114,6 @@ I independently defined the flow and organization of concepts, focusing on expla
 
 Where system access was available, I validated behavior directly. Subject Matter Experts were used only for targeted technical validation.
 
-This document was primarily authored from first principles without reliance on external PM drafts or structured templates.
-
 ### Context and Goals
 - Triggered by introduction of Distributed Cloud Firewall egress functionality  
 - Goal was to explain how egress is implemented in modern Aviatrix-managed cloud networks  
@@ -130,7 +128,7 @@ This document was primarily authored from first principles without reliance on e
 - Transit gateway egress concepts (legacy reference)  
 
 ### Constraints
-- Designed as an overview-level document (not procedural guide)  
+- Designed as an overview-level document (not a procedural guide)  
 - Some feature complexity required SME validation  
 - No significant external restraints or deadlines 
 
