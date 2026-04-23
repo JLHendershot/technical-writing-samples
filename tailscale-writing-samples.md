@@ -23,7 +23,7 @@ This document explains how Distributed Cloud Firewall (DCF) enables zero trust e
 It was written to replace an outdated zero trust guide and align documentation with newer DCF-based security capabilities.
 
 ### My Role
-Sole owner of this documentation within the Security module, responsible for defining structure, sequencing, and explanatory flow from scratch.
+Sole owner of this documentation within the Security module, responsible for structure, sequencing, and explanatory flow.
 
 A key focus of my work was resolving ambiguity around Default Action Rule behavior, where internal interpretations varied. I restructured the explanation to make rule precedence and system behavior clear for customer use.
 
@@ -68,7 +68,7 @@ Primary writer responsible for transforming internal engineering guidance from V
 
 I designed the custom-built table mapping legacy egress concepts to DCF equivalents.
 
-The source material included a VP-provided internal document and an AI-generated structural draft used as a reference. The document I created (based on this source material) was reorganized and rewritten to improve clarity, usability, and customer safety during migration.
+The source material included a VP-provided internal document and an AI-generated structural draft used as a reference. I reorganized and rewrote the document to improve clarity, usability, and migration safety for customers.
 
 Because I did not have full access to a legacy environment, I validated system behavior and migration assumptions with Subject Matter Experts. My role focused heavily on translating internal architecture into safe, externally consumable guidance.
 
@@ -76,7 +76,7 @@ Because I did not have full access to a legacy environment, I validated system b
 - Triggered by migration from legacy egress architecture to Distributed Cloud Firewall  
 - Goal was to enable safe customer transition without configuration loss or partial migration states
 - Intended for existing customers with deployed legacy egress systems
-- Customers were expected to engage Aviatrix Sales or Solutions Engineers during migration  
+- Customers were expected to engage Aviatrix Sales or Solutions Engineers for assistance during migration  
 
 ### Technical Scope
 - Legacy egress FQDN filtering model  
@@ -110,7 +110,7 @@ It provides an operational overview of egress architecture in Aviatrix-managed n
 ### My Role
 Sole author of this documentation within the Security module, responsible for full end-to-end creation of structure and content.
 
-I independently defined the flow and organization of concepts, focusing on explaining system behavior clearly rather than configuration depth.
+I independently defined the structure and flow, focusing on system behavior rather than configuration-level detail.
 
 Where system access was available, I validated behavior directly. Subject Matter Experts were used only for targeted technical validation.
 
